@@ -78,7 +78,9 @@ def process_comments(comment_forest):
     return neg_list, neu_list, pos_list
     
 def main():
-    #Gather comments from three posts
+    # Testing on three reddit posts: One where positive comments are expected,
+    # another where negative comments are expected and the last one where
+    # neutral comments are expected to test traversal of comments and sentiment analyzer.
     comments_pos_expected = get_submission_comments('https://www.reddit.com/r/MakeupAddiction/comments/9eqlrj/my_everyday_no_makeup_base_with_a_pop_of_color/')
     comments_neg_expected = get_submission_comments('https://www.reddit.com/r/The_Donald/comments/9984v4/just_a_reminder_to_the_snowflakes_trying_to_bring/')
     comments_neu_expected = get_submission_comments('https://www.reddit.com/r/MrRobot/comments/9euji7/no_spoilers_halloween_costume_check/')
